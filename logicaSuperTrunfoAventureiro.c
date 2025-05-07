@@ -179,4 +179,17 @@ int main() {
     // Escolha do atributo
     int atributo;
     printf("\n  Qual atributo deseja comparar? \n");
+    printf("1 - População\n");
+    printf("2 - Área\n");
+    printf("3 - PIB\n");
+    printf("4 - Pontos Turísticos\n");
+    printf("5 - Densidade  Populacional (MENOR vence)\n");
+    printf("Digite o número  do atributo: ");
+    scanf("%d", &atributo);
+
+    // Comparar e mostrar o resultado
+    compararCartas(carta1, carta2, atributo);
+
+    return 0;
+    
 }
