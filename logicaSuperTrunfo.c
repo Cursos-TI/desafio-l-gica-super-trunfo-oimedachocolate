@@ -9,6 +9,22 @@
         int pontos__turisticos;
     }
     Carta;
+    // Função de exibição da carta
+    void mostrarCarta(Carta c) {
+        printf("\nCódigo: %s\n", c.codigo);
+        printf("Cidade: %s (%s)\n", c.nome, c.estado);
+        printf("População %d\n", c.populacao)
+        printf("Área: %.2f km²\n", c.area);
+        printf("PIB: %2f Bilhões\n", c.pontos__turisticos);
+    }
 
+    // Resultado
+int main() {
+    printf("Desafio Novato: SUPER TUNFO CIDADES! \n \n");
+
+    printf("Cadastro da carta1:\n");
+    printf("Código: ");
+    
+}
     return 0;
 }
