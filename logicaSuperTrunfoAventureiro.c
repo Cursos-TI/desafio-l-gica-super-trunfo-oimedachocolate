@@ -115,3 +115,68 @@ void compararCartas(Cartas c1, Carta c2, int atributo) {
         printf("Empate entre as cartas!\n");
     }
 }
+
+int main() {
+    Carta carta1, carta2;
+
+    // Cadastro da carta 1
+    printf("Cadastro da carta 1: \n");
+    printf("Código: ");
+    fgets(carta1.codigo, 10, stdin);
+    printf("Nome da cidade: ");
+    fgets(carta1.nome, 50, stdin);
+    printf("Estado: ");
+    fgets(carta1.estado, 30, stdin);
+    printg("População: ");
+    scanf("%d", &carta1.populacao);
+    printf("Área (km²) ");
+    scanf("%f", &carta1.area);
+    printf("PIB (em bilhões): ");
+    scanf("%f", &carta1.pib);
+    printf("Pontos turísticos: ");
+    scanf("%d", &carta1.pontos_turisticos);
+    getchar(); // para limpar o buffer
+// Cadastro da carta 1
+    printf("Cadastro da carta 1: \n");
+    printf("Código: ");
+    fgets(carta1.codigo, 10, stdin);
+    printf("Nome da cidade: ");
+    fgets(carta1.nome, 50, stdin);
+    printf("Estado: ");
+    fgets(carta1.estado, 30, stdin);
+    printg("População: ");
+    scanf("%d", &carta1.populacao);
+    printf("Área (km²) ");
+    scanf("%f", &carta1.area);
+    printf("PIB (em bilhões): ");
+    scanf("%f", &carta1.pib);
+    printf("Pontos turísticos: ");
+    scanf("%d", &carta1.pontos_turisticos);,
+
+    // Cadastro da carta 2
+    printf("Cadastro da carta 2: \n");
+    printf("Código: ");
+    fgets(carta2.codigo, 10, stdin);
+    printf("Nome da cidade: ");
+    fgets(carta2.nome, 50, stdin);
+    printf("Estado: ");
+    fgets(carta2.estado, 30, stdin);
+    printg("População: ");
+    scanf("%d", &carta2.populacao);
+    printf("Área (km²) ");
+    scanf("%f", &carta2.area);
+    printf("PIB (em bilhões): ");
+    scanf("%f", &carta2.pib);
+    printf("Pontos turísticos: ");
+    scanf("%d", &carta2.pontos_turisticos);
+    
+    // Exibir cartas
+    printf("\n === Carta1 ===");
+    mostrarCarta(carta1);
+    printf("\n === Carta  2 ===");
+    mostrarCarta(carta2);
+
+    // Escolha do atributo
+    int atributo;
+    printf("\n  Qual atributo deseja comparar? \n");
+}
