@@ -16,6 +16,11 @@
         printf("População %d\n", c.populacao)
         printf("Área: %.2f km²\n", c.area);
         printf("PIB: %2f Bilhões\n", c.pontos__turisticos);
+        
+        // Densidade Populacional = população / área
+        float densidade = c.populacao / c.area;
+        printf("Densidade Populacional: %.2f hab/km²\n", densidade);
+        
     }
 
     // Resultado
