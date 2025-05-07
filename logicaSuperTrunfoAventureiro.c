@@ -7,24 +7,24 @@ typedef struct {
     char estado[30];
     int populacao;
     float  pib;
+    float area;
     int pontos_turisticos;
-
-} Carta;
+}  Carta;
 
 // Função para calcular  a densidade populacional
 float calcularDensidade(Carta c) {
-    if (c.area   > 0) {
+    if (c.area > 0) {
         return c.populacao / c.area;
     }
     return 0;
 }
 
 // Função para mostrar uma carta
-void mostrarCarta(carta c)  {
+void mostrarCarta(Carta c)  {
     printf("\nCódigo %s", c.codigo);
     printf("Cidade: %s", c.nome);
     printf("Estado: %s", c.estado);
-    printf("População: %d\n" c.populacao);
+    printf("População: %d\n", c.populacao);
     printf("Área: %.2f km²\n", c.area);
     printf("PIB: %.2f bilhões\n", c.pib);
     printf("Pontos Turísticos: %d\n", c.pontos_turisticos);
@@ -32,7 +32,7 @@ void mostrarCarta(carta c)  {
 
 }
 
-void compararCartas(Cartas c1, Carta c2, int atributo) {
+void compararCartas(Carta c1, Carta c2, int atributo) {
     float valor1 = 0, valor2 = 0;
     int vencedor = -1; // 1 = carta1; 2 = carta2; 0 = empate
 
@@ -151,7 +151,7 @@ int main() {
     printf("PIB (em bilhões): ");
     scanf("%f", &carta1.pib);
     printf("Pontos turísticos: ");
-    scanf("%d", &carta1.pontos_turisticos);,
+    scanf("%d", &carta1.pontos_turisticos);
 
     // Cadastro da carta 2
     printf("Cadastro da carta 2: \n");
@@ -191,5 +191,5 @@ int main() {
     compararCartas(carta1, carta2, atributo);
 
     return 0;
-    
+
 }
