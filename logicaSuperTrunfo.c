@@ -91,7 +91,10 @@
             printf("Empate!\n");
         }
     }
+    else{
+        printf("Atributo inválido. \n");
     }
+}
 
 
     // Resultado
