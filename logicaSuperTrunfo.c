@@ -6,7 +6,7 @@
         int populacao;
         float area;
         float pib;
-        int pontos__turisticos;
+        int pontos_turisticos;
     }
     Carta;
     // Função de exibição da carta
@@ -15,7 +15,7 @@
         printf("Cidade: %s (%s)\n", c.nome, c.estado);
         printf("População %d\n", c.populacao)
         printf("Área: %.2f km²\n", c.area);
-        printf("PIB: %2f Bilhões\n", c.pontos__turisticos);
+        printf("PIB: %2f Bilhões\n", c.pontos_turisticos);
         
         // Densidade Populacional = população / área
         float densidade = c.populacao / c.area;
@@ -101,8 +101,40 @@
 int main() {
     printf("Desafio Novato: SUPER TUNFO CIDADES! \n \n");
 
+    Carta carta1, carta2;
+
     printf("Cadastro da carta1:\n");
     printf("Código: ");
+    fgets(carta1.codigo, 10, stdin);
+    printf("Nome da cidade: ");
+    fgets(carta1.nome, 50, stdin);
+    printf("Estado: ");
+    fgets(carta1.estado, 30, stdin);
+    printf("População: ");
+    scanf("%d", &carta1.populacao);
+    printf("Área (km²): ");
+    scanf("%f", &carta1.area);
+    prinf("PIB (em bilhões): ");
+    scanf("%f", &carta1.pib);
+    printf("Pontos Turísticos: ");
+    scanf("%d", &carta1.pontos_turisticos);
+    getchar(); // Para limpar o buffer
+
+    printf("\n Cadastro da carta 2: \n");
+    printf("Código: ");
+    fgets(carta2.codigo, 10, stdin);
+    printf("Nome da cidade: ");
+    fgets(carta2.nome, 50, stdin);
+    printf("Estado: ");
+    fgets(carta2.estado, 30, stdin);
+    printf("População: ");
+    scanf("%d", &carta2.populacao);
+    printf("Área (km²): ");
+    scanf("%f", &carta2.area);
+    printf("PIB (em bilhões): ");
+    scanf("%f", &carta2.pib);
+    printf("Pontos turísticos: ");
+    scanf("%d", &carta2.pontos_turisticos);
     
 }
     return 0;
