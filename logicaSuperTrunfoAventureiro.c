@@ -171,9 +171,9 @@ int main() {
     scanf("%d", &carta2.pontos_turisticos);
     
     // Exibir cartas
-    printf("\n === Carta1 ===");
+    printf("\n === Carta 1 ===");
     mostrarCarta(carta1);
-    printf("\n === Carta  2 ===");
+    printf("\n === Carta 2 ===");
     mostrarCarta(carta2);
 
     // Escolha do atributo
