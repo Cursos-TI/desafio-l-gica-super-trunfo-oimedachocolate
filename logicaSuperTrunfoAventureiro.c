@@ -144,7 +144,7 @@ int main() {
     fgets(carta1.nome, 50, stdin);
     printf("Estado: ");
     fgets(carta1.estado, 30, stdin);
-    printg("População: ");
+    printf("População: ");
     scanf("%d", &carta1.populacao);
     printf("Área (km²) ");
     scanf("%f", &carta1.area);
@@ -161,7 +161,7 @@ int main() {
     fgets(carta2.nome, 50, stdin);
     printf("Estado: ");
     fgets(carta2.estado, 30, stdin);
-    printg("População: ");
+    printf("População: ");
     scanf("%d", &carta2.populacao);
     printf("Área (km²) ");
     scanf("%f", &carta2.area);
