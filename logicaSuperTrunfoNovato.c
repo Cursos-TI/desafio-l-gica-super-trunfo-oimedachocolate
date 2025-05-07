@@ -35,7 +35,7 @@ void compararCartas(Carta c1, Carta c2) {
         if (atributo == 1) {
             valor1 = c1.populacao;
             valor2 = c2.populacao;
-            printf("\nComparando população...\n");
+            printf("\nComparando população\n");
             if (valor1 > valor2) {
                 printf("Vencedora: %s\n", c1.nome);
             } else if (valor2 > valor1) {
@@ -47,7 +47,7 @@ void compararCartas(Carta c1, Carta c2) {
         else if (atributo == 2) {
             valor1 = c1.area;
             valor2 = c2.area;
-            printf("\nComparando área...\n");
+            printf("\nComparando área\n");
             if (valor1 > valor2) {
                 printf("Vencedora: %s\n", c1.nome);
             } else if (valor2 > valor1) {
@@ -59,7 +59,7 @@ void compararCartas(Carta c1, Carta c2) {
         else if (atributo == 3) {
             valor1 = c1.pib;
             valor2 = c2.pib;
-            printf("\nComparando PIB...\n");
+            printf("\nComparando PIB\n");
             if (valor1 > valor2) {
                 printf("Vencedora: %s\n", c1.nome);
             } else if (valor2 > valor1) {
@@ -84,7 +84,7 @@ void compararCartas(Carta c1, Carta c2) {
             // Densidade populacional: menor valor vence
             valor1 = c1.populacao / c1.area;
             valor2 = c2.populacao / c2.area;
-            printf("\nComparando densidade populacional (MENOR vence)...\n");
+            printf("\nComparando densidade populacional (MENOR vence)\n");
             if (valor1 < valor2) {
                 printf("Vencedora: %s\n", c1.nome);
             } else if (valor2 < valor1) {
